@@ -1,10 +1,13 @@
-let header = document.querySelector("h1");
-function greetingMsg() {
 
-    header.style.textTransform.toUpperCase;
-    header.style.color = "red";
-    header.style.fontSize = "4em";
+
+const clicker = document.getElementById("clicker");
+
+function popHeading() {
+    clicker.style.color = "red";
+    clicker.innerHTML = "Welcome to Sensory Overload!";
 }
+
+clicker.addEventListener("mouseover",popHeading);
 
 function removeMsg() {
     document.getElementById("message").innerHTML = "";
@@ -21,10 +24,11 @@ function getToleraceLvl(value) {
     document.getElementById("answer").innerHTML = "Try some Habaneros to kick start the party in your mouth!";
     } else if (value === "Hardcore") {
         document.getElementById("answer").innerHTML = "Hmmm...Now you're talking! Have a go at this delicious Bhut Jolokia Pepper (Ghost Pepper)!";
-    } else (value === "Ultra-hardcore") {
+    } else {
         document.getElementById("answer").innerHTML = "YOU ARE MAD! Try Trinidad Moruga Scorpion at your own risk! You might need a stick to beat the fire off your tongue!";
     }
 }
 
-console.log("Testing");
-console.log(45);
+
+
+
