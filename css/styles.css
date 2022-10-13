@@ -1,0 +1,38 @@
+h1 {
+    text-align: center;
+    color: #8C1C13;
+}
+
+.header-img {
+    margin: 1em auto;
+    display: block;
+    width: 40em;
+    height: 25em;
+}
+
+#container {
+    background-color: #E7D7C1;
+    border: 5px solid #735751;
+    width: 70%;
+    margin: 1em auto;
+
+}
+
+#message {
+    text-align: center;
+}
+    
+.fixed-footer {
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    padding: 10px 0;
+    color: black;
+    }
+    
+
+.fixed-footer {
+    bottom: 0;
+    }
+    
+ 

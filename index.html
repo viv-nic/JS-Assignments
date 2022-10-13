@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Sensory Overload</title>
+</head>
+
+<body>
+    <header>
+    <h1 onmouseover="greetingMsg()">CHILLI FOR YOU?</h1>
+    <img class="header-img" src="/images/chilli-in-mouth.jpg" alt="a lady bite a chilli in her mouth smiling">
+    </header>
+
+    <div>
+        <article id="container">
+
+            <section>
+                <p id="message">
+                    Are you a chilli lover?<br> 
+                    Wanna try something new that will heighened your sensory?<br>
+                    <a onclick="removeMsg()"><strong>CLICK HERE if you do!</strong></a>
+
+                </p>
+
+                <label for="tolerance-level">What level of chilli experience do you have?</label>
+                <select id="tolerant-level" onchange="getToleraceLvl(this.value)">
+                    <option value="">--Please select a level--</option>
+                    <option value="None">Zero</option>
+                    <option value="Entry">Beginner</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Mid">Mid</option>
+                    <option value="Hardcore">Hard-core</option>
+                    <option value="Ultra-Hardcore">Ultra Hard-core</option>
+                </select>
+                <p id="answer"></p>
+
+            </section>
+
+        </article>
+    </div>
+
+
+   
+    <div class="fixed-footer">
+        <div>Copyright &copy; Vivian Nicholls 2022</div>
+    </div>
+
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
