@@ -4,7 +4,8 @@ const clicker = document.getElementById("clicker");
 
 function popHeading() {
     clicker.style.color = "red";
-    clicker.innerHTML = "Welcome to Sensory Overload!";
+    clicker.innerHTML = "CHILLI FOR YOU?";
+    
 }
 
 clicker.addEventListener("mouseover",popHeading);
