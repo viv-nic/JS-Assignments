@@ -1,14 +1,26 @@
 
-
+//magic in header
 const clicker = document.getElementById("clicker");
-
 function popHeading() {
     clicker.style.color = "red";
     clicker.innerHTML = "CHILLI FOR YOU?";
     
 }
-
 clicker.addEventListener("mouseover",popHeading);
+
+//how user info link to first message, then to second
+const btnEnter = document.querySelector(".btn-enter");
+let userName = "name";
+let firstMessage = `Hi ${userName}, are you a chilli lover?`;
+function getLetsgo() {
+    btnEnter.style.backgroundColor = "red";
+    btnEnter.style.color = "white";
+   document.querySelector("#message").innerHTML = firstMessage;
+  
+}
+setTimeout(firstMessage,2000);
+btnEnter.addEventListener("click",getLetsgo);
+
 
 function removeMsg() {
     document.getElementById("message").innerHTML = "";

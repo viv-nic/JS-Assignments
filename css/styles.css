@@ -6,6 +6,7 @@ h1 {
 .header-background {
     width:100%;
     height: 30em;
+   
 }
 
 .centered {
@@ -15,28 +16,62 @@ h1 {
     transform: translate(-50%, -50%);
     border: 1px solid white;
     background-color: white;
-    padding: 2em 1em;
+    padding: 1em 0.5em;
     opacity: 0.6;
     font-size: 3em;
 }
 
-.img-body {
-    margin: 1em auto;
-    display: block;
-    width: 70%;
-    height: 25%;
-}
+
 
 #container {
     background-color: #E7D7C1;
     border: 5px solid #735751;
     width: 70%;
     margin: 1em auto;
-
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
 }
+
+.img-body {
+    margin: 1em auto;
+    display: block;
+    width: 70%;
+    height: 80%;
+}
+
+#user-info {
+    margin: 2em 2.8em;
+    
+}
+
+.btn-enter {
+    padding: 0.2em 0.5em;
+    display: inline-block;
+    background-color: #EE589F;
+    border-radius: 3px;
+    
+}
+
 
 #message {
     text-align: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    padding: 0.5em 1.5em;
+    display: block;
+    background-color: pink;
+    border-radius: 3px;
+    margin: 0 0.5rem 1rem;
+    cursor:pointer;
+    transition: all ease 0.5s;
 }
     
 .fixed-footer {

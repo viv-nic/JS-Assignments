@@ -18,20 +18,44 @@
     </header>
 
     <div>
-        <article id="container">
+        <section id="container">
+            <article>
             <div>
                 <img class="img-body" src="/images/chilli-in-mouth.jpg" alt="a lady bite a chilli in her mouth smiling">
             </div>
 
-            <section>
+            <div id="user-info">
+                <label class="username" for="username">Your Name</label>
+                <input type="text" id="username" name="username">
+                <a class="btn-enter">Let's go!</a>
+            </div>
+            </article>
+            
+            <article>
+                
                 <p id="message">
-                    Are you a chilli lover?<br> 
-                    Wanna try something new that will heighened your sensory?<br>
+                    Are you a chilli lover?
+                </p>
+
+                <div class="flex">
+                    <a class="btn">Yes</a>
+                    <a class="btn">No</a>
+                </div>
+
+                <p>
+                    Wanna try something new that will heighened your sensory?
+                </p>
                     <a onclick="removeMsg()"><strong>CLICK HERE if you do!</strong></a>
 
                 </p>
+                
+
+            </article>
+
+            <article>
 
                 <label for="tolerance-level">What level of chilli experience do you have?</label>
+
                 <select id="tolerant-level" onchange="getToleraceLvl(this.value)">
                     <option value="">--Please select a level--</option>
                     <option value="None">Zero</option>
@@ -43,9 +67,9 @@
                 </select>
                 <p id="answer"></p>
 
-            </section>
+            </article>
 
-        </article>
+        </section>
     </div>
 
 
