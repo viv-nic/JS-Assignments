@@ -18,12 +18,14 @@ function getLetsgo() {
    document.querySelector("#message").innerHTML = firstMessage;
   
 }
-setTimeout(firstMessage,2000);
+
 btnEnter.addEventListener("click",getLetsgo);
 
 
 function removeMsg() {
+   
     document.getElementById("message").innerHTML = "";
+
 }
 
 function getToleraceLvl(value) {

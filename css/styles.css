@@ -28,9 +28,6 @@ h1 {
     border: 5px solid #735751;
     width: 70%;
     margin: 1em auto;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     
 }
 
@@ -42,7 +39,7 @@ h1 {
 }
 
 #user-info {
-    margin: 2em 2.8em;
+    text-align: center;
     
 }
 
