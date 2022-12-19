@@ -1,33 +1,40 @@
-h1 {
+h2 {
     text-align: center;
     color: #8C1C13;
 }
 
+p {
+    color: #ff1d15;
+    font-weight: bold;
+    padding: 1em;
+}
+
 .header-background {
+    background-image: url('../images/colorful-chillies-mixture.jpg');
     width:100%;
-    height: 30em;
+    height: 40vh;
    
 }
 
 .centered {
     position: absolute;
-    top: 30%;
+    top: 17%;
     left: 50%;
     transform: translate(-50%, -50%);
     border: 1px solid white;
     background-color: white;
     padding: 1em 0.5em;
     opacity: 0.6;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 
 
 #container {
-    background-color: #E7D7C1;
-    border: 5px solid #735751;
-    width: 70%;
-    margin: 1em auto;
+    background-color: white;
+    border: 5px solid #ed1710;
+    width: 90%;
+    margin: 3em auto;
     
 }
 
@@ -43,18 +50,48 @@ h1 {
     
 }
 
-.btn-enter {
-    padding: 0.2em 0.5em;
-    display: inline-block;
-    background-color: #EE589F;
+
+
+#message {
+    font-size: 1.5em;
+    text-align: center;
+    color: #3ec300;
+    text-decoration: none;
+}
+
+
+input[type=text] {
+    
+    color: #337ca0;
     border-radius: 3px;
+    padding: 0.5em;
+    margin: 0.5em;
+    width: 66%;
+    
+}
+
+input[type=text]:focus {
+    border: 3px solid #337ca0;
+    outline: none;
     
 }
 
 
-#message {
-    text-align: center;
+select {
+    color: red;
+    padding: .2em;
 }
+
+.btn-enter {
+    padding: 0.5em 0.7em;
+    display: inline-block;
+    background-color:  #fffc31;
+    color:#3ec300;
+    border-radius: 3px;
+    cursor:pointer;
+    
+}
+
 
 .flex {
     display: flex;
@@ -64,24 +101,133 @@ h1 {
 .btn {
     padding: 0.5em 1.5em;
     display: block;
-    background-color: pink;
+    background-color: #fffc31;
+    color: red;
     border-radius: 3px;
     margin: 0 0.5rem 1rem;
     cursor:pointer;
-    transition: all ease 0.5s;
-}
+    text-align: center;
     
-.fixed-footer {
+}
+
+.btn:hover, .btn-enter:hover{
+    background-color: #3ec300;
+    border: 2px solid #3ec300;
+    color: #fff;
+}
+
+p {
+    text-align: center;
+}
+
+.quote {
+    margin-bottom: 2em;
+}
+
+select {
+    margin-top: 0.5em;
+}
+
+#answer {
+
+    padding: 1em;
+    font-size: 1.5em;;
+}
+
+#getrecommendations,
+.hideandshow {
+    display: none;
+}
+
+
+
+.levels {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.chilli-card {
+    border: 2px dashed orange;
+    margin-bottom: 2em;
+    border-radius: 10px;
+    padding: 1em;
+    
+}
+
+.chilli-card h3,
+.chilli-card p {
+    text-align: center;
+    color: red;
+}
+
+.footer {
     width: 100%;
     text-align: center;
-    position: fixed;
+    position: relative;
     padding: 10px 0;
     color: black;
-    }
-    
-
-.fixed-footer {
     bottom: 0;
     }
     
+
+    /* Responsive Design */
+@media screen and (min-width: 600px) {
+    .header-background {
+        background-image: url('../images/chilli-wallpaper.jpg');
+
+}
+
+    #message,
+    .centered {
+        font-size: 3em;
+    }
+
+    .img-body {
+        width: 40%;
+    }
+
+    input[type=text] {
+        width: 30%;
+        font-size: 1em;
+    }
+
+   .hideandshow p {
+    font-size: 1.5em;
+   }
+
+   .levels {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .btn {
+    width: 8em;
+    margin-top: .5em;
+    margin-bottom: 2em;
+   }
+
+   p {
+    font-size: 1.5em;
+    padding-bottom: 0;
+   }
+
+   .chilli-card {
+    width: 80%;
+    margin: 0 auto;
+   }
+
+   #chilli {
+    font-size: 3em;
+   }
+}
+
+@media screen and (min-width: 900px) {
+    .btn {
+        padding: 0.5em 0;
+        width: 7em;
+    }
+}
  

@@ -10,53 +10,66 @@
 
 <body>
     <header>
-    <div>
-        <img class="header-background" src="/images/colorful-chillies-mixture.jpg">
-        <div><h1 class="centered"  id="clicker">SENSORY OVERLOAD</h1> </div>
+    <div class="header-background">
+        
+        <div><h2 class="centered"  id="overheader">SENSORY OVERLOAD</h2> </div>
     </div>
 
     </header>
 
     <div>
         <section id="container">
-            <article>
+
             <div>
                 <img class="img-body" src="/images/chilli-in-mouth.jpg" alt="a lady bite a chilli in her mouth smiling">
             </div>
 
+            <div class="welcome">
+            <article>
             <div id="user-info">
-                <label class="username" for="username">Your Name</label>
-                <input type="text" id="username" name="username">
-                <a onclick="removeMsg()" class="btn-enter">Let's go!</a>
+                <input type="text" id="username" autocomplete=off name="username" placeholder="Enter Your Name"><br>
+                <a class="btn-enter">Let's go!</a>
             </div>
+            <p id="message"></p>
             </article>
             
-            <article>
-                
-                <p id="message">
-                    Are you a chilli lover?
-                </p>
-
+            <article class="hideandshow">
+                <p>Want some recommendations to arouse your chilli experience?</p>
                 <div class="flex">
-                    <a class="btn">Yes</a>
-                    <a class="btn">No</a>
+                    <a id="buttonY" class="btn">Yes</a>
+                    <a id="buttonN" class="btn">No</a>
                 </div>
-
-                <p>
-                    Wanna try something new that will heighened your sensory?
-                </p>
-                    <a onclick="removeMsg()"><strong>CLICK HERE if you do!</strong></a>
-
-                </p>
                 
-
+                <p id="yes-msg"  class="quote"></p>   
             </article>
 
+            </div>
+
+           
             <article>
 
-                <label for="tolerance-level">What level of chilli experience do you have?</label>
+                <div id="getrecommendations">
 
-                <select id="tolerant-level" onchange="getToleraceLvl(this.value)">
+                    <p>What level of chilli experience do you have?</p>
+                    <div id="chilli-card" class="chilli-card getinfo">
+                        <h3 id="chilli"></h3>
+                        <p id="chilli-details"></p>
+                    </div>
+                    <div class="levels">
+                        <a class="btn toggle none">Zero</a>
+                        <a class="btn toggle entry">Beginner</a>
+                        <a class="btn toggle intermediate">Intermediate</a>
+                        <a class="btn toggle mid">Mid</a>
+                        <a class="btn toggle hardcore">Hard-core</a>
+                        <a class="btn toggle ultra">Ultra-Hardcore</a>
+                        
+                    </div>
+
+                    
+                <!-- the below is alternative code for the level of chilli question -->
+                <!-- <label for="tolerance-level">What level of chilli experience do you have?</label><br>
+
+                <select  onclick="removeMsg()" autocomplete=off id="tolerant-level" onchange="getToleraceLvl(this.value)">
                     <option value="">--Please select a level--</option>
                     <option value="None">Zero</option>
                     <option value="Entry">Beginner</option>
@@ -65,16 +78,20 @@
                     <option value="Hardcore">Hard-core</option>
                     <option value="Ultra-Hardcore">Ultra Hard-core</option>
                 </select>
-                <p id="answer"></p>
+                <p id="answer"></p> -->
+
+                </div>
+
 
             </article>
+           
 
         </section>
     </div>
 
 
    
-    <div class="fixed-footer">
+    <div class="footer">
         <div>Copyright &copy; Vivian Nicholls 2022</div>
     </div>
 
